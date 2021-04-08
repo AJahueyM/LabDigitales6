@@ -1,0 +1,227 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr  8 14:47:13 2021
+# Process ID: 12032
+# Current directory: C:/Users/A00823315/Desktop/PF6/P6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11024 C:\Users\A00823315\Desktop\PF6\P6\P6.xpr
+# Log file: C:/Users/A00823315/Desktop/PF6/P6/vivado.log
+# Journal file: C:/Users/A00823315/Desktop/PF6/P6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/A00823315/Desktop/PF6/P6/P6.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_decoder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_decoder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_decoder.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top calculator [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top calculator [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source calculator.tcl
+close_sim
+launch_simulation
+source calculator.tcl
+add_force {/calculator/CX} -radix hex {8 0ns}
+add_force {/calculator/CY} -radix hex {8 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {1 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {8 0ns}
+run 10 us
+add_force {/calculator/CX} -radix hex {1 0ns}
+add_force {/calculator/CY} -radix hex {1 0ns}
+run 10 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_calculator [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_calculator [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source tb_calculator.tcl
+close_sim
+launch_simulation
+source tb_calculator.tcl
+close_sim
+launch_simulation
+source tb_calculator.tcl
+run 10 us
+close_sim
+launch_simulation
+source tb_calculator.tcl
+close_sim
+launch_simulation
+source tb_calculator.tcl
+close_sim
+launch_simulation
+source tb_calculator.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top calculator [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top calculator [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source calculator.tcl
+add_force {/calculator/CX} -radix hex {8 0ns}
+add_force {/calculator/CY} -radix hex {8 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {1 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {8 0ns}
+run 10 us
+add_force {/calculator/CX} -radix hex {1 0ns}
+add_force {/calculator/CY} -radix hex {1 0ns}
+run 10 us
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+set_property xsim.view {C:/Users/A00823315/Desktop/P6/project_1/tb_decoder_behav.wcfg C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source calculator.tcl
+add_force {/calculator/CX} -radix hex {8 0ns}
+add_force {/calculator/CY} -radix hex {8 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {1 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {8 0ns}
+run 10 us
+add_force {/calculator/CX} -radix hex {1 0ns}
+add_force {/calculator/CY} -radix hex {1 0ns}
+run 10 us
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source calculator.tcl
+add_force {/calculator/CX} -radix hex {8 0ns}
+add_force {/calculator/CY} -radix hex {8 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {1 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {8 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {1 0ns}
+add_force {/calculator/CX} -radix hex {1 0ns}
+run 10 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source calculator.tcl
+add_force {/calculator/CX} -radix hex {8 0ns}
+add_force {/calculator/CY} -radix hex {8 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {1 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {8 0ns}
+run 10 us
+add_force {/calculator/CY} -radix hex {1 0ns}
+add_force {/calculator/CX} -radix hex {1 0ns}
+run 10 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_calculator [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_calculator [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+save_wave_config {C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/A00823315/Desktop/PF6/P6/calculator_behav.wcfg
+source tb_calculator.tcl
+close_sim
